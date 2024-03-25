@@ -123,7 +123,7 @@ phoneAnimation.to(
   {
     opacity: 1,
   },
-  0
+  1
 );
 
 if (window.innerWidth > MOBILE_WIDTH) {
@@ -135,87 +135,17 @@ if (window.innerWidth > MOBILE_WIDTH) {
   phoneAnimation.to(".phone__game.is-forager", { x: "113%", y: "104%" }, "<");
   phoneAnimation.to(".phone__game.is-unpacking", { x: "-100%", y: "90%" }, "<");
   phoneAnimation.to(".phone__game.is-wizard", { x: "-162%", y: "-95%" }, "<");
-  phoneAnimation.to(
-    ".phone__game.is-crying-sun",
-    {
-      x: "160%",
-      y: "-5%",
-    },
-    "<"
-  );
+  phoneAnimation.to(".phone__game.is-crying-sun", { x: "160%", y: "-5%" }, "<");
 } else {
   // Mobile Version
-  phoneAnimation.to(
-    ".phone__game.is-slay",
-    {
-      x: "-98%",
-      y: "-231%",
-    },
-    0
-  );
-
-  phoneAnimation.to(
-    ".phone__game.is-green",
-    {
-      x: "155%",
-      y: "-41%",
-    },
-    "<"
-  );
-
-  phoneAnimation.to(
-    ".phone__game.is-blue",
-    {
-      x: "48%",
-      y: "-194%",
-    },
-    "<"
-  );
-
-  phoneAnimation.to(
-    ".phone__game.is-orange",
-    {
-      x: "-176%",
-      y: "104%",
-    },
-    "<"
-  );
-
-  phoneAnimation.to(
-    ".phone__game.is-forager",
-    {
-      x: "74%",
-      y: "232%",
-    },
-    "<"
-  );
-
-  phoneAnimation.to(
-    ".phone__game.is-unpacking",
-    {
-      x: "-89%",
-      y: "221%",
-    },
-    "<"
-  );
-
-  phoneAnimation.to(
-    ".phone__game.is-wizard",
-    {
-      x: "-154%",
-      y: "-62%",
-    },
-    "<"
-  );
-
-  phoneAnimation.to(
-    ".phone__game.is-crying-sun",
-    {
-      x: "149%",
-      y: "92%",
-    },
-    "<"
-  );
+  phoneAnimation.to(".phone__game.is-slay", { x: "-98%", y: "-231%" }, 0);
+  phoneAnimation.to(".phone__game.is-green", { x: "155%", y: "-41%" }, "<");
+  phoneAnimation.to(".phone__game.is-blue", { x: "48%", y: "-194%" }, "<");
+  phoneAnimation.to(".phone__game.is-orange", { x: "-176%", y: "104%" }, "<");
+  phoneAnimation.to(".phone__game.is-forager", { x: "74%", y: "232%" }, "<");
+  phoneAnimation.to(".phone__game.is-unpacking", { x: "-89%", y: "221%" }, "<");
+  phoneAnimation.to(".phone__game.is-wizard", { x: "-154%", y: "-62%" }, "<");
+  phoneAnimation.to(".phone__game.is-crying-sun", { x: "149%", y: "92%" }, "<");
 }
 //
 //
