@@ -10,13 +10,11 @@ const handleLocale = () => {
   // Grab each locale link
   const locales = document.querySelectorAll(".localization_link");
 
-  // Convert the Text content of the locale link to the iso code on breakpoints lower than tabet
-  if (window.innerWidth < 768) {
-    locales.forEach((locale) => {
-      const isoCode = locale.getAttribute("hreflang");
-      locale.textContent = splitByDash(isoCode);
-    });
-  }
+  // Convert the Text content of the locale link to the iso code
+  locales.forEach((locale) => {
+    const isoCode = locale.getAttribute("hreflang");
+    locale.textContent = splitByDash(isoCode);
+  });
 
   // Grab the current locale link and set the dropdown button's text to the current locale
   const currentLocale = document.querySelector("[hreflang].w--current");
