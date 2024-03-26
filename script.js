@@ -1,4 +1,4 @@
-import handleLocale from "./locales";
+import handleLocale from "./locales.js";
 // call on page load
 handleLocale();
 
