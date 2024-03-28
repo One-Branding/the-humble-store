@@ -1,4 +1,5 @@
 export default function handleGames() {
+  const TABLET_WIDTH = 1024;
   const MOBILE_WIDTH = 878;
 
   const phoneAnimation = gsap.timeline({
@@ -20,12 +21,27 @@ export default function handleGames() {
     0
   );
 
-  if (window.innerWidth > MOBILE_WIDTH) {
+  if (window.innerWidth > TABLET_WIDTH) {
     // Desktop Version
     phoneAnimation.to(".is-top-left", { x: "-97%", y: "-55%" }, 0);
     phoneAnimation.to(".is-top-right", { x: "125%", y: "-100%" }, "<");
     phoneAnimation.to(".is-bottom-left", { x: "-115%", y: "70%" }, "<");
     phoneAnimation.to(".is-bottom-right", { x: "97%", y: "35%" }, "<");
+    phoneAnimation.to(".svg.cc-beams", { opacity: 1 });
+  } else if (window.innerWidth > MOBILE_WIDTH) {
+    // Tablet Version
+    phoneAnimation.to(".phone__game.is-top-left", { x: "-98%", y: "-231%" }, 0);
+    phoneAnimation.to(".phone__game.is-top-right", { x: "0%", y: "0%" }, "<");
+    phoneAnimation.to(
+      ".phone__game.is-bottom-left",
+      { x: "48%", y: "-194%" },
+      "<"
+    );
+    phoneAnimation.to(
+      ".phone__game.is-bottom-right",
+      { x: "-176%", y: "104%" },
+      "<"
+    );
     phoneAnimation.to(".svg.cc-beams", { opacity: 1 });
   } else {
     // Mobile Version

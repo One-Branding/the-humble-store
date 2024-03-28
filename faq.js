@@ -4,7 +4,7 @@ export default function handleFaq() {
     scrollTrigger: {
       trigger: ".cc-faq-bg1",
       start: "top 90%",
-      end: "bottom 50%",
+      end: "bottom bottom",
       scrub: true,
     },
   });
@@ -12,8 +12,8 @@ export default function handleFaq() {
   faqBG1.eventCallback("onStart", () => {
     ScrollTrigger.refresh();
   });
-  faqBG1.to(".cc-faq-bg1", { y: "0%" });
-  faqBG1.to(".cc-faq-bg2", { y: "0%" }, "<");
+  faqBG1.to(".svg_wrap.cc-faq-bg1", { y: "-7%" });
+  faqBG1.to(".cc-faq-bg2", { y: "-3%" }, "<");
 
   const initAccordianSet = (accordianWrap) => {
     const accordians = accordianWrap.querySelectorAll("[data-accordian]");

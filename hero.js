@@ -4,7 +4,7 @@ export default function handleHero() {
       trigger: ".cc-hero-bg1",
       start: "top 50%",
       end: "bottom top",
-      scrub: 0.2,
+      scrub: 1,
     },
   });
 
