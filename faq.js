@@ -12,8 +12,14 @@ export default function handleFaq() {
   faqBG1.eventCallback("onStart", () => {
     ScrollTrigger.refresh();
   });
-  faqBG1.to(".svg_wrap.cc-faq-bg1", { y: "-7%" });
-  faqBG1.to(".cc-faq-bg2", { y: "-3%" }, "<");
+  faqBG1.to(".svg_wrap.cc-faq-bg1", {
+    y: `${window.innerWidth > 400 ? "-7%" : "-20%"}`,
+  });
+  faqBG1.to(
+    ".cc-faq-bg2",
+    { y: `${window.innerWidth > 400 ? "-3%" : "-10%"}` },
+    "<"
+  );
 
   const initAccordianSet = (accordianWrap) => {
     const accordians = accordianWrap.querySelectorAll("[data-accordian]");
