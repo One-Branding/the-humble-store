@@ -5,6 +5,7 @@ export default function handleFooter() {
       start: "top 90%",
       end: "bottom bottom",
       scrub: true,
+      ease: "power4.out",
     },
   });
   footerTimlime.to(".cc-footer-purple", { y: "0%" }, "<");
