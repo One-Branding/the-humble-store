@@ -23,9 +23,20 @@ export default function handleSteps() {
   });
 
   cardsTL.to(".steps-card-wrapper", { x: endX, ease: "none" });
-  cardsTL.to(".cc-install-bg1", { y: "0%" }, "<");
-  cardsTL.to(".cc-install-bg2", { y: "0%" }, "<");
-  cardsTL.to(".cc-install-bg3", { y: "0%" }, "<");
-  cardsTL.to(".cc-install-bg4", { y: "0%" }, "<");
-  cardsTL.to(".cc-install-bg5", { y: "0%" }, "<+0.25");
+
+  const cardBackgroundTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".section.cc-install",
+      start: "top top",
+      end: "300% top",
+      scrub: 1,
+      ease: "linear",
+      markers: true,
+    },
+  });
+  cardBackgroundTL.to(".cc-install-bg1", { y: "0%" }, "<");
+  cardBackgroundTL.to(".cc-install-bg2", { y: "0%" }, "<");
+  cardBackgroundTL.to(".cc-install-bg3", { y: "0%" }, "<");
+  cardBackgroundTL.to(".cc-install-bg4", { y: "0%" }, "<");
+  cardBackgroundTL.to(".cc-install-bg5", { y: "0%" }, "<+0.25");
 }
