@@ -24,10 +24,12 @@ export default function handleSteps() {
 
   cardsTL.to(".steps-card-wrapper", { x: endX, ease: "none" });
 
+  // Steps Cards - Background Elements movement.
   const cardBackgroundTL = gsap.timeline({
     scrollTrigger: {
       trigger: ".section.cc-install",
       start: "top top",
+      // Used a longer end value to make the background elements move at a slower pace and after the cards have completed their movement.
       end: "300% top",
       scrub: 1,
       ease: "linear",
