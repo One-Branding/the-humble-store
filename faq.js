@@ -6,6 +6,7 @@ export default function handleFaq() {
       start: "top 90%",
       end: "bottom bottom",
       scrub: true,
+      ease: "power4.out",
     },
   });
 
