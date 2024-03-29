@@ -18,6 +18,7 @@ export default function handleSteps() {
       scrub: 1,
       pin: true,
       pinSpacing: true,
+      // Make the animation move slower at the end.
       ease: "power4.out",
     },
   });
@@ -33,7 +34,6 @@ export default function handleSteps() {
       end: "300% top",
       scrub: 1,
       ease: "linear",
-      markers: true,
     },
   });
   cardBackgroundTL.to(".cc-install-bg1", { y: "0%" }, "<");
