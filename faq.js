@@ -12,9 +12,9 @@ export default function handleFaq() {
     },
   });
 
-  faqBG1.eventCallback("onStart", () => {
-    ScrollTrigger.refresh();
-  });
+  // faqBG1.eventCallback("onStart", () => {
+  //   ScrollTrigger.refresh();
+  // });
   faqBG1.to(".svg_wrap.cc-faq-bg1", {
     y: `${window.innerWidth > 400 ? "-7%" : "0%"}`,
   });
