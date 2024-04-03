@@ -5,6 +5,7 @@ export default function handleFaq() {
       trigger: ".cc-faq-bg1",
       start: "top 90%",
       end: "bottom bottom",
+      // Testing
       markers: true,
       scrub: true,
       ease: "power4.out",
