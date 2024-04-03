@@ -16,11 +16,11 @@ export default function handleFaq() {
     ScrollTrigger.refresh();
   });
   faqBG1.to(".svg_wrap.cc-faq-bg1", {
-    y: `${window.innerWidth > 400 ? "-7%" : "-20%"}`,
+    y: `${window.innerWidth > 400 ? "-7%" : "0%"}`,
   });
   faqBG1.to(
     ".cc-faq-bg2",
-    { y: `${window.innerWidth > 400 ? "-3%" : "-10%"}` },
+    { y: `${window.innerWidth > 400 ? "-3%" : "0%"}` },
     "<"
   );
 
